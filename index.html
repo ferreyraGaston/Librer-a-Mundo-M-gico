@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/img/mundo.png" sizes="32x32">
+</head>
+<body>
+    
+  <header>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.php" class="brand-logo">
+                <div class="logoflex">
+                    <img src="/img/mundo.png" alt="Logo San Jose" class="logo2">
+                    
+                </div>
+                
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">add</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="dashboard.php">Eventos</a></li>
+                <li><a href="inscripciones.php">Inscripciones</a></li>
+                <li><a href="resutados.php">Resultados</a></li>
+                <li><a href="fechas.php">Fechas</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+              
+            </ul>
+        </div>
+    </nav>
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content colorDropdown">
+                    <li><a href="crud.php">Registro</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
+                </ul>
+
+                <!-- Dropdown Structure -->
+                <ul id="dropdown2" class="dropdown-content colorDropdown">
+                    <li><a href="crud.php">Registro</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
+                </ul>
+
+    <!-- Sidebar (Sidenav) -->
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view">
+                <a href="#user" class="LogoSidebar"><img class="Sidebar" src="/img/mundo.png"></a>
+            </div>
+        </li>
+        <li><a href="index.php">Inicio</a></li>
+        <li><a href="dashboard.php">Eventos</a></li>
+        <li><a href="inscripciones.php">Inscripciones</a></li>
+        <li><a href="resutados.php">Resultados</a></li>
+        <li><a href="fechas.php">Fechas</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+
+    </ul>
+
+</header>
+
+
+
+
+<div class="container center-align">
+
+  <h4>Librería Mundo Mágico</h4>
+
+  <div class="container">
+    <p>
+      Bienvenidos a Librería Mundo Mágico, un rincón encantado donde los libros cobran vida y la imaginación no tiene límites. Aquí encontrarás una cuidadosa selección de literatura que abarca desde los clásicos atemporales hasta las últimas novedades en ficción y no ficción.
+  
+  Nuestra librería no solo se trata de vender libros; es un espacio para soñar, aprender y compartir. Organizamos eventos literarios, clubes de lectura y actividades para niños, fomentando el amor por la lectura en todas las edades.
+  
+  Ven a descubrir nuestro acogedor ambiente, donde cada página es una puerta a un nuevo mundo. ¡Te esperamos en Librería Mundo Mágico, donde cada libro cuenta una historia!
+    </p>
+  </div>
+  
+
+
+</div>
+
+
+
+
+
+
+
+<footer class="footerColor footerContainer">
+  <div class="container footerContainer">
+  <div class="row footerColor center footerContainer">
+      <div class="col l6 s12">
+          <a href="index.php" class="brand-logo">
+              <div class="logofooterDiv">
+                  <img src="/img/mundo.png" alt="Logo San Jose" class="logofooter">
+                  <span class="username"><h5 class="amber-text text-accent-3">texto</h5></span>
+              </div>
+          </a>
+          <p class="grey-text text-lighten-4">texto direccion</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+      <h6 class="white-text">tel</h6>
+      <ul>
+          <li><a class="grey-text text-lighten-3 texto-en-minusculas texto-chico" href="#!">email</a></li>
+          <li><a class="grey-text text-lighten-3 texto-en-minusculas texto-chico" href="#!">email</a></li>
+          <li><a class="grey-text text-lighten-3 texto-en-minusculas texto-chico" href="#!">email</a></li>
+      </ul>
+      </div>
+      <p class="grey-text text-lighten-4">© 2024 Copyright-informatica IPEM 400</p>
+  </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var sidenavElems = document.querySelectorAll('.sidenav');
+      var sidenavInstances = M.Sidenav.init(sidenavElems, {});
+
+      var dropdownElems = document.querySelectorAll('.dropdown-trigger');
+      var dropdownInstances = M.Dropdown.init(dropdownElems, {
+          hover: false  // Para activar el dropdown al hacer clic
+      });
+  });
+</script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
