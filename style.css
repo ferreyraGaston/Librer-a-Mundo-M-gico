@@ -269,12 +269,12 @@ nav {
     }
   
     .carousel.carousel-slider {
-      height: 200px; /* Ajuste para pantallas móviles */
+      height: 100px; /* Ajuste para pantallas móviles */
     }
   
     .carousel.carousel-slider .carousel-item img {
       object-fit: cover;
-      width: 100%;
+      width: 200%;
     }
     
     .footerContainer, .footerColor {
