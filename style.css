@@ -280,6 +280,9 @@ nav {
     .footerContainer, .footerColor {
       text-align: center;
     }
+    h5{
+        font-size: 15px; /* Tamaño de fuente más pequeño */
+    }
   }
   
 
